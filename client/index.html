@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERP Laboratory Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <h1>ERP Laboratory Management</h1>
+    
+    <div class="labs-container">
+      <div class="scroll-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Lab Name</th>
+              <th>Floor</th>
+              <th>Incharge</th>
+              <th>Status</th>
+              <th>Batches</th>
+            </tr>
+          </thead>
+          <tbody id="labs-list">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="batch-container" style="display: none;" id="batch-container">
+      <div class="scroll-container">
+        <h2>Active Batches</h2>
+        <div class="batch-grid" id="batch-list"></div>
+      </div>
+      <button class="load-more-btn" id="load-more" style="display: none;">
+        Load More Batches
+      </button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
